@@ -16,6 +16,9 @@
 	"repository" :
 	 	 { "type" : "git",
 	 	  "url" : "https://github.com/csreddy7/ShopKeeper.git"
+	  	},
+	  	"scripts":{
+	  		"start":"http-server ./html -a localhost -p 8080"
 	  	}
 
 }
