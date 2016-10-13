@@ -2,12 +2,16 @@
 	"name":"ShopKeeper",
 	"version":"1.0.0",
 	"description":"software to manage small stores",
-	"licence":"MIT",
+	"license":"MIT",
 	"devDependencies":{
 		"bower": "^1.7.7",
     	"http-server": "^0.9.0",
     	"karma": "^0.13.22",
-    	"protractor": "^3.2.2"
+    	"protractor": "^3.2.2",
+    	"bootstrap":"3.3.x",
+    	"jquery":"3.x.x",
+    	"jqueryui":"1.x.x",
+    	"angular":"1.5.x"
 	},
 	"person":{
 		"name":"chandra sekhar",
