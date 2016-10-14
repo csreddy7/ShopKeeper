@@ -7,9 +7,33 @@
 	overflow: hidden;
 }
 
-.ShopKeeper .content{
+.header{
 	width: 100%;
-	height: 100%;
-	text-align: center;
+	height: 50px;
+	padding: 10px;
+	background-color: #ccc;
+	color: #fff;
+}
+
+a{
+	cursor: pointer;
+}
+.logo{
+	float: left;
+	font-size: 35px;
+	line-height: 30px;
+}
+.logo span:first-child{
 	color: red;
+}
+.logo span:last-child{
+	color: blue;
+}
+.registration-link{
+	float: right;
+}
+.login{
+	position: absolute;
+	top: 50%;
+	left: 40%;
 }
