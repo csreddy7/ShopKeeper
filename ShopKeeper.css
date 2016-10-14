@@ -9,8 +9,8 @@
 
 .header{
 	width: 100%;
-	height: 50px;
-	padding: 10px;
+	height: 45px;
+	padding: 0px 10px 0px 10px;
 	background-color: #ccc;
 	color: #fff;
 }
@@ -20,8 +20,8 @@ a{
 }
 .logo{
 	float: left;
-	font-size: 35px;
-	line-height: 30px;
+	font-size: 30px;
+	line-height: 1.2;
 }
 .logo span:first-child{
 	color: red;
@@ -31,6 +31,7 @@ a{
 }
 .registration-link{
 	float: right;
+	line-height: 3.2;
 }
 .login{
 	position: absolute;
