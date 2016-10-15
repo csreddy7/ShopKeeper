@@ -25,17 +25,42 @@ a{
 }
 .logo span:first-child{
 	color: red;
+	animation: slide-from-top 1s linear ;
+	position:relative;
 }
 .logo span:last-child{
 	color: blue;
+	animation: slide-from-top 1s linear ;
+	position:relative;
 }
 .registration-link{
 	float: right;
 	line-height: 3.2;
 }
 .login{
-	width:30%;
 	position: absolute;
 	top: 50%;
-	left: 35%;
+	left: 40%;
+}
+
+sub,sup{
+	animation: fade-in 1s linear ;
+}
+
+@keyframes fade-in{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes slide-from-top{
+	0%{
+		top:-100px
+	}
+	100%{
+		top:0px;
+	}
 }
