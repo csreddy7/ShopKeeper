@@ -12,7 +12,8 @@
 		"jquery":"3.x.x",
 		"jqueryui":"1.x.x",
 		"angular":"1.5.x",
-		"requirejs":"2.x.x"
+		"requirejs":"2.x.x",
+		"angular-route": "1.5.x"
 	},
 	"person":{
 		"name":"chandra sekhar",

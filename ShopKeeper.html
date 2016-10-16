@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html  lang="en" ng-app="ShopKeeper">
 <head>	
 	<title>Shop Keeper</title>
 	<meta charset="utf-8"></meta>
+	<base href="/" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--<script src="node_modules\requirejs\require.js"></script> -->
-	<script src="node_modules\jquery\dist\jquery.js"></script>
-	<script src="ShopKeeper.js"></script>
+	<script src="node_modules\jquery\dist\jquery.js"></script>	
+	<script src="node_modules\angular\angular.js"></script>
+	<script src="node_modules\angular-route\angular-route.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+	<script src="login\login.module.js"></script>
+	<script src="main\main.module.js"></script>
+	<script src="ShopKeeper.module.js"></script>
+	<script src="ShopKeeper.config.js"></script>
 	<script>
 	/*requirejs.config({
 	paths:{
 		"jquery":"node_modules/jquery/dist/jquery"
 	}
 });
-	require(["ShopKeeper.js"]); */
-	</script>
-	<script src="node_modules\jqueryui\jquery-ui.js"></script>
-	<script src="node_modules\angular\angular.js"></script>
-	<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
-	<link href="ShopKeeper.css" rel="stylesheet"></link>
-	<link href="node_modules\bootstrap\dist\css\bootstrap.css" rel="stylesheet"></link>
-</head>
-<body class="ShopKeeper">
-		<div class="header">
-		<div class="logo"><span>S</span><span>K</span></div>
-		<div class="registration-link">New User ? <a>Sign-up</a> </div>
-		</div>
-	<div class="container">
-		<div class="login">
-			<form class="form-horizontal">
-				<div class="form-group">
-					<label class="control-label col-md-4">username</label>
-					<div class="col-md-4"><input type="text" class="form-control" ></div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-md-4" >password</label> 
-					<div class="col-md-4"><input type="password" class="form-control" ></div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-md-4" ></label> 
-					<div class="col-md-2"><input type="button"  value="Login" class="form-control btn btn-primary" ></div>
-				</div>
+require(["ShopKeeper.js"]); */
 
-			</form>
-		</div>
+$('document').ready(function(){
+	setTimeout(function(){
+		$('<sub>hop</sub>').appendTo('.logo span:first-child');
+		$('<sub>eeper</sub>').appendTo('.logo span:last-child');
+	},2000);
+});
+
+</script>
+<script src="node_modules\jqueryui\jquery-ui.js"></script>
+<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+<link href="ShopKeeper.css" rel="stylesheet"></link>
+<link href="node_modules\bootstrap\dist\css\bootstrap.css" rel="stylesheet"></link>
+</head>
+<body class="ShopKeeper"  ng-controller="shopkeeperController">
+	<div class="header">
+		<div class="logo"><span>S</span><span>K</span></div>
+		<div class="registration-link"><a href="loginPage">Sign-in</a> </div>
+		<div class="registration-link">New User ? <a>Sign-up&nbsp;,&nbsp;</a> </div>
+
+	</div>
+	<div class="container">
+		<div ng-view>Shop Keeper </div>		
+	</div>
+	<div class="footer">
+		CSRK Solutions pvt.ltd &#169 2016
 	</div>
 </body>
 </html>
