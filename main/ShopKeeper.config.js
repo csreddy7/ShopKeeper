@@ -4,11 +4,11 @@ angular
 	//$locationProvider.hashPrefix('!');
 	$locationProvider.html5Mode(true);
 	$routeProvider
-	.when('/loginPage',{
+	.when('/login',{
 		templateUrl:"login/login.html"
 	})
-	.when('/mainPage',{
-		templateUrl:"main/main.html"
+	.when('/home',{
+		templateUrl:"home/home.html"
 	})
-	.otherwise("/loginPage");
+	.otherwise("/login");
 }]);

@@ -1,4 +1,5 @@
-var ShopKeeper=angular.module("ShopKeeper",['ngSanitize','ngRoute','login','main']);
+
+var ShopKeeper=angular.module("ShopKeeper",['ngSanitize','ngRoute','login','home']);
 
 ShopKeeper.controller("shopkeeperController",function shopkeeperController($scope){
 	

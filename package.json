@@ -3,6 +3,7 @@
 	"version":"1.0.0",
 	"description":"software to manage small stores",
 	"license":"MIT",
+	"main":"ShopKeeper.app.js",
 	"devDependencies":{
 		"bower": "^1.7.7",
 		"http-server": "^0.9.0",
@@ -13,7 +14,9 @@
 		"jqueryui":"1.x.x",
 		"angular":"1.5.x",
 		"requirejs":"2.x.x",
-		"angular-route": "1.5.x"
+		"angular-route": "1.5.x",
+		"express":"4.x.x",
+		"angular-sanitize":"1.x.x"
 	},
 	"person":{
 		"name":"chandra sekhar",
@@ -24,7 +27,7 @@
 		"url" : "https://github.com/csreddy7/ShopKeeper.git"
 	},
 	"scripts":{
-		"start":"http-server ./ -a localhost -p 7697"
+		"start":"http-server ./ -d false -a localhost -p 7697"
 	}
 
 }

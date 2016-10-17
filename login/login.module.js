@@ -11,7 +11,7 @@ login.controller("loginController",function loginController($scope,$location){
 			setTimeout(function(){
 				$('.status').fadeOut(1000);
 			},100);
-			$location.path('mainPage');
+			$location.path('home');
 
 		}else{
 			$scope.status="Failure&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-remove'></span>";

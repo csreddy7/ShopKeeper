@@ -9,19 +9,17 @@
 	<script src="node_modules\jquery\dist\jquery.js"></script>	
 	<script src="node_modules\angular\angular.js"></script>
 	<script src="node_modules\angular-route\angular-route.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+	<script src="node_modules\angular-sanitize\angular-sanitize.js"></script>
 	<script src="login\login.module.js"></script>
-	<script src="main\main.module.js"></script>
-	<script src="ShopKeeper.module.js"></script>
-	<script src="ShopKeeper.config.js"></script>
-	<script>
-	/*requirejs.config({
-	paths:{
-		"jquery":"node_modules/jquery/dist/jquery"
-	}
-});
-require(["ShopKeeper.js"]); */
+	<script src="home\home.module.js"></script>
+	<script src="main\ShopKeeper.module.js"></script>
+	<script src="main\ShopKeeper.config.js"></script>
+<script src="node_modules\jqueryui\jquery-ui.js"></script>
+<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+<link href="main\ShopKeeper.css" type="text/css" rel="stylesheet"></link>
+<link href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css" rel="stylesheet"></link>
 
+	<script>
 $('document').ready(function(){
 	setTimeout(function(){
 		$('<sub>hop</sub>').appendTo('.logo span:first-child');
@@ -30,15 +28,12 @@ $('document').ready(function(){
 });
 
 </script>
-<script src="node_modules\jqueryui\jquery-ui.js"></script>
-<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
-<link href="ShopKeeper.css" rel="stylesheet"></link>
-<link href="node_modules\bootstrap\dist\css\bootstrap.css" rel="stylesheet"></link>
+
 </head>
 <body class="ShopKeeper"  ng-controller="shopkeeperController">
 	<div class="header">
 		<div class="logo"><span>S</span><span>K</span></div>
-		<div class="registration-link"><a href="loginPage">Sign-in</a> </div>
+		<div class="registration-link"><a href="login">Sign-in</a> </div>
 		<div class="registration-link">New User ? <a>Sign-up&nbsp;,&nbsp;</a> </div>
 
 	</div>
