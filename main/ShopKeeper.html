@@ -14,20 +14,21 @@
 	<script src="home\home.module.js"></script>
 	<script src="main\ShopKeeper.module.js"></script>
 	<script src="main\ShopKeeper.config.js"></script>
-<script src="node_modules\jqueryui\jquery-ui.js"></script>
-<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
-<link href="main\ShopKeeper.css" type="text/css" rel="stylesheet"></link>
-<link href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css" rel="stylesheet"></link>
+	<script src="node_modules\jqueryui\jquery-ui.js"></script>
+	<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+	<link href="main\ShopKeeper.css" type="text/css" rel="stylesheet"></link>
+	<link href="home\home.style.css" type="text/css" rel="stylesheet"></link>
+	<link href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css" rel="stylesheet"></link>
 
 	<script>
-$('document').ready(function(){
-	setTimeout(function(){
-		$('<sub>hop</sub>').appendTo('.logo span:first-child');
-		$('<sub>eeper</sub>').appendTo('.logo span:last-child');
-	},2000);
-});
+		$('document').ready(function(){
+			setTimeout(function(){
+				$('<sub>hop</sub>').appendTo('.logo span:first-child');
+				$('<sub>eeper</sub>').appendTo('.logo span:last-child');
+			},2000);
+		});
 
-</script>
+	</script>
 
 </head>
 <body class="ShopKeeper"  ng-controller="shopkeeperController">
@@ -35,11 +36,15 @@ $('document').ready(function(){
 		<div class="logo"><span>S</span><span>K</span></div>
 		<div class="registration-link"><a href="login">Sign-in</a> </div>
 		<div class="registration-link">New User ? <a>Sign-up&nbsp;,&nbsp;</a> </div>
-
 	</div>
-	<div class="container">
-		<div ng-view>Shop Keeper </div>		
+	<div class="main-content">
+	<div  class="container-fluid" >
+		<div  ng-view class="row row-content">
+		main content
+		</div>
+	 </div>
 	</div>
+			
 	<div class="footer">
 		CSRK Solutions pvt.ltd &#169 2016
 	</div>
