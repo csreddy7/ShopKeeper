@@ -4,10 +4,6 @@ var app=express();
 
 app.use(express.static(__dirname+'/'));
 
-app.get("/",function(req,res){
-	res.sendFile(path.resolve("main/ShopKeeper.html"));
-});
-
 app.get("*",function(req,res){
 	res.sendFile(path.resolve("main/ShopKeeper.html"));
 });

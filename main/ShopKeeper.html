@@ -18,7 +18,9 @@
 	<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
 	<link href="main\ShopKeeper.css" type="text/css" rel="stylesheet"></link>
 	<link href="home\home.style.css" type="text/css" rel="stylesheet"></link>
+	<link href="resources\font-awesome\css\font-awesome.css" type="text/css" rel="stylesheet"></link>
 	<link href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css" rel="stylesheet"></link>
+	
 
 	<script>
 		$('document').ready(function(){
@@ -34,13 +36,15 @@
 <body class="ShopKeeper"  ng-controller="shopkeeperController">
 	<div class="header">
 		<div class="logo"><span>S</span><span>K</span></div>
-		<div class="registration-link"><a href="login">Sign-in</a> </div>
-		<div class="registration-link">New User ? <a>Sign-up&nbsp;,&nbsp;</a> </div>
+		<div class="registration-link">
+		<div ><a>Sign-up</a> (or) </div>
+		<div><a href="login">Sign-in</a> </div>
+		</div>
 	</div>
 	<div class="main-content">
 	<div  class="container-fluid" >
 		<div  ng-view class="row row-content">
-		main content
+			
 		</div>
 	 </div>
 	</div>

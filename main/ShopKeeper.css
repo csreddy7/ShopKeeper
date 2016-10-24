@@ -1,3 +1,6 @@
+html{
+font-size: 100% !important;
+}
 .ShopKeeper{
 	background-color: #607D8B;
 	box-sizing: border-box;
@@ -61,6 +64,9 @@ a{
 	float: right;
 	line-height: 3.2;
 }
+.registration-link div{
+	display: inline-block;
+}
 .login{
 	width:50%;
 	position: fixed;
@@ -97,4 +103,12 @@ sub,sup{
 
 .login .alert{
 	padding:6px;
+}
+.welcome-text{
+	width:65%;
+	position: relative;
+	top: 40%;
+	left: 15%;
+	font-size: 9rem;
+	color:#fff;
 }

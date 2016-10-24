@@ -10,5 +10,8 @@ angular
 	.when('/home',{
 		templateUrl:"home/home.html"
 	})
-	.otherwise("/login");
+	.when('/main',{
+		templateUrl:"main/welcome.html"
+	})
+	.otherwise("/main");
 }]);
