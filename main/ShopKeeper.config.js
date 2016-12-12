@@ -13,5 +13,8 @@ angular
 	.when('/main',{
 		templateUrl:"main/welcome.html"
 	})
+	.when('/register',{
+		templateUrl:"login/Registration.html"
+	})
 	.otherwise("/main");
 }]);
