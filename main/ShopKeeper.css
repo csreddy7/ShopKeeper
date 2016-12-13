@@ -119,3 +119,7 @@ sub,sup{
 	font-size: 6rem;
 	color:#fff;
 }
+
+#shop-registration .error{
+	background-color: red;
+}
