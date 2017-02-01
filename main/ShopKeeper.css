@@ -123,3 +123,7 @@ sub,sup{
 #shop-registration .error{
 	background-color: red;
 }
+
+.ng-touched{
+background-color: red !important;
+}

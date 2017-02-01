@@ -1,33 +1,38 @@
 {
-	"name":"ShopKeeper",
-	"version":"1.0.0",
-	"description":"software to manage small stores",
-	"license":"MIT",
-	"main":"ShopKeeper.app.js",
-	"devDependencies":{
-		"bower": "^1.7.7",
-		"http-server": "^0.9.0",
-		"karma": "^0.13.22",
-		"protractor": "^3.2.2",
-		"bootstrap":"3.3.x",
-		"jquery":"3.x.x",
-		"jqueryui":"1.x.x",
-		"angular":"1.5.x",
-		"requirejs":"2.x.x",
-		"angular-route": "1.5.x",
-		"express":"4.x.x",
-		"angular-sanitize":"1.x.x"
-	},
-	"person":{
-		"name":"chandra sekhar",
-		"email":"csredde@gmail.com"
-	},
-	"repository" :
-	{ "type" : "git",
-		"url" : "https://github.com/csreddy7/ShopKeeper.git"
-	},
-	"scripts":{
-		"start":"http-server ./ -d false -a localhost -p 7697"
-	}
-
+  "name": "ShopKeeper",
+  "version": "1.0.0",
+  "description": "software to manage small stores",
+  "license": "MIT",
+  "main": "ShopKeeper.app.js",
+  "devDependencies": {
+    "angular": "^1.5.11",
+    "angular-mocks": "^1.6.1",
+    "angular-route": "1.5.x",
+    "angular-sanitize": "1.x.x",
+    "angular-ui-router": "^0.4.0",
+    "bootstrap": "3.3.x",
+    "bower": "^1.7.7",
+    "express": "4.x.x",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.5.2",
+    "jquery": "3.x.x",
+    "jqueryui": "1.x.x",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.26",
+    "protractor": "^3.2.2",
+    "requirejs": "2.x.x"
+  },
+  "person": {
+    "name": "chandra sekhar",
+    "email": "csredde@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csreddy7/ShopKeeper.git"
+  },
+  "scripts": {
+    "start": "http-server ./ -d false -a localhost -p 7697"
+  }
 }

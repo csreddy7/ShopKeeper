@@ -1,8 +1,59 @@
 var login=angular.module("login",[]);
-login.controller("loginController",function loginController($scope,$location){
+login.factory("SecurityToken",["$log",function($log){
+	$log.log("service is working ");
+	var random=(Math.floor(Math.random()*33))*33;
+	return "Security-tokenno-"+random;
+}]);
+
+login.filter("removeA",["$log",function($log){
+	return function(value){
+		$log.log("initiation of filter");
+		return value.replace(/[a A]/g," ");
+	}	
+}]);
+
+login.directive("shopName",["$log","babyService",function($log,babyService){
+	return{
+		restrict:"E",
+		template:"hello this store name is "+babyService.sex
+	}
+}]);
+function baby(){
+	this.name="baby";
+	this.age="21";
+}
+login.provider("babyService",function babyServiceProvider(){
+var sex="female";
+this.setSex=function(str){
+	sex=str;
+}
+this.$get=["$log",function($log){
+		$log.log("provide service initialting");
+		var service=new baby();
+		service.sex=sex;
+		return service;
+}];
+});
+
+login.config(["babyServiceProvider",function(babyServiceProvider){
+	console.log("configuring providee service");
+babyServiceProvider.setSex("FeMale");
+}]);
+login.controller("loginController",function loginController($scope,$location,SecurityToken){
 	$scope.username="";
+	$scope.rangeValue=0;
 	$scope.password="";
+	$scope.heading="store registration having security token"+SecurityToken;
+	$scope.firstName="";
+	$scope.states=["AP","KA","JK"];
+	$scope.showStoreType=false;
+	$scope.firstNumber=1;
+	$scope.secondNumber=2;
+
+
+	
 	$scope.validate=function(){
+		
 		if($scope.username=="admin" && $scope.password=="admin"){
 			$scope.status="Success&nbsp;&nbsp;<span class='glyphicon glyphicon-ok'></span>";
 			$('.status').removeClass("alert alert-danger");

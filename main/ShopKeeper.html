@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en" ng-app="ShopKeeper">
+<html  lang="en" ng-app="ShopKeeper" >
 <head>	
 	<title>Shop Keeper</title>
 	<meta charset="utf-8"></meta>
@@ -9,16 +9,8 @@
 	<link href="home\home.style.css" type="text/css" rel="stylesheet"></link>
 	<link href="resources\font-awesome\css\font-awesome.css" type="text/css" rel="stylesheet"></link>
 	<link href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css" rel="stylesheet"></link>
+	<link href="node_modules\jasmine-core\lib\jasmine-core\jasmine.css" type="text/css" rel="stylesheet"></link>
 
-	<script>
-		$('document').ready(function(){
-			setTimeout(function(){
-				$('<sub>hop</sub>').appendTo('.logo span:first-child');
-				$('<sub>eeper</sub>').appendTo('.logo span:last-child');
-			},2000);
-		});
-
-	</script>
 
 </head>
 <body class="ShopKeeper"  ng-controller="shopkeeperController">
@@ -28,7 +20,7 @@
 		<div><a href="register">Sign-up</a> (or) </div>
 		<div><a href="login">Sign-in</a> </div>
 		</div>
-	</div>
+	</div> 
 	<div class="main-content">
 	<div  class="container-fluid" >
 		<div  ng-view class="row row-content">
@@ -40,6 +32,7 @@
 	<div class="footer">
 		CSRK Solutions pvt.ltd &#169 2016
 	</div>
+	
 	<script src="node_modules\jquery\dist\jquery.js"></script>	
 	<script src="node_modules\angular\angular.js"></script>
 	<script src="node_modules\angular-route\angular-route.js"></script>
@@ -50,5 +43,25 @@
 	<script src="main\ShopKeeper.config.js"></script>
 	<script src="node_modules\jqueryui\jquery-ui.js"></script>
 	<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+<!--	<script src="node_modules\jasmine-core\lib\jasmine-core\jasmine.js"></script>
+	<script src="node_modules\jasmine-core\lib\jasmine-core\jasmine-html.js"></script>
+	<script src="node_modules\jasmine-core\lib\jasmine-core\boot.js"></script> -->
+		<script>
+		$('document').ready(function(){
+			setTimeout(function(){
+				$('<sub>hop</sub>').appendTo('.logo span:first-child');
+				$('<sub>eeper</sub>').appendTo('.logo span:last-child');
+			},2000);
+			
+		});
+//var myworker=new Worker("/resources/myworker.js");
+//myworker.onmessage=function(event){
+//console.log("count after loop is"+event.data);
+//}
+
+
+
+	</script>
+
 </body>
 </html>

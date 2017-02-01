@@ -1,0 +1,23 @@
+CACHE MANIFEST
+
+#sample application cahe file
+
+home.style.css
+jquery.js
+angular.js
+angular-route.js
+login.module.js
+home.module.js
+ShopKeeper.css
+ShopKeeper.module.js
+ShopKeeper.config.js
+Registration.html
+ShopKeeper.html
+
+
+NETWORK:
+font-awesome.css
+
+
+FALLBACK:
+

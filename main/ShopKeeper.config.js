@@ -18,3 +18,5 @@ angular
 	})
 	.otherwise("/main");
 }]);
+
+
