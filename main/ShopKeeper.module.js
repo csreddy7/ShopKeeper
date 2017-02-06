@@ -1,8 +1,8 @@
 
 var ShopKeeper=angular.module("ShopKeeper",['ngSanitize','ngRoute','login','home']);
 
-ShopKeeper.controller("shopkeeperController",function shopkeeperController($scope){
-	
+ShopKeeper.controller("shopkeeperController",function shopkeeperController($scope,$rootScope){
+	$rootScope.pageToConsider="home";
 });
 
 

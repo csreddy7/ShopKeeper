@@ -17,13 +17,21 @@
 	<div class="header">
 		<div class="logo"><span>S</span><span>K</span></div>
 		<div class="registration-link">
-		<div><a href="register">Sign-up</a> (or) </div>
-		<div><a href="login">Sign-in</a> </div>
+		<div ng-show="pageToConsider==='home'"><a href="register">Sign-up</a> (or) </div>
+		<div ng-show="pageToConsider==='home'"><a href="login">Sign-in</a> </div>
 		</div>
 	</div> 
 	<div class="main-content">
 	<div  class="container-fluid" >
-		<div  ng-view class="row row-content">
+		<div ng-switch="pageToConsider" class="full-container" >
+			<div ng-switch-when="main" class="full-container">
+				<div ng-include="'home/home.html'"  class="full-container"></div>
+			</div>
+			<div ng-switch-when="home" class="full-container">
+				<div  ng-view class="row row-content">
+			</div>
+		</div>
+		
 			
 		</div>
 	 </div>

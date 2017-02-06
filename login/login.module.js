@@ -39,7 +39,7 @@ login.config(["babyServiceProvider",function(babyServiceProvider){
 	console.log("configuring providee service");
 babyServiceProvider.setSex("FeMale");
 }]);
-login.controller("loginController",function loginController($scope,$location,SecurityToken){
+login.controller("loginController",function loginController($scope,$location,SecurityToken,$rootScope){
 	$scope.username="";
 	$scope.rangeValue=0;
 	$scope.password="";
@@ -62,7 +62,8 @@ login.controller("loginController",function loginController($scope,$location,Sec
 			setTimeout(function(){
 				$('.status').fadeOut(1000);
 			},100);
-			$location.path('home');
+			$location.path('main');
+			$rootScope.pageToConsider="main";
 
 		}else{
 			$scope.status="Failure&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-remove'></span>";

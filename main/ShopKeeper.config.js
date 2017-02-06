@@ -8,15 +8,12 @@ angular
 		templateUrl:"login/login.html"
 	})
 	.when('/home',{
-		templateUrl:"home/home.html"
-	})
-	.when('/main',{
 		templateUrl:"main/welcome.html"
 	})
 	.when('/register',{
 		templateUrl:"login/Registration.html"
 	})
-	.otherwise("/main");
+	.otherwise("/home");
 }]);
 
 
