@@ -1,15 +1,14 @@
 		
 <div class="col-md-2 navigation" ng-controller="mainController">
 	<ul>
-		<li class="nav-item" ng-click="goTo('main')">home</li>
-		<li class="nav-item" ng-click="goTo('commodities')">Commodities</li>
-		<li class="nav-item" ng-click="goTo('reports')">Reports</li>
-		<li class="nav-item" ng-click="goTo('vendors')">Vendors</li>
-		<li class="nav-item" ng-click="goTo('orders')">Orders</li>
-		<li class="nav-item" ng-click="goTo('myaccount')">Account</li>
+		<li class="nav-item" ui-sref="home.dashboard">Dashboard </li>
+		<li class="nav-item" ui-sref="home.commodities">Commodities </li>
+		<li class="nav-item" ui-sref="home.reports">Reports </li>
+		<li class="nav-item" ui-sref="home.vendors">Vendors </li>
+		<li class="nav-item" ui-sref="home.orders">Orders </li>
+		<li class="nav-item" ui-sref="home.myaccount">Account </li>
 	</ul>
 </div>
-<div ng-view class="col-md-10 home-content" >
-
+<div ui-view class="col-md-10 home-content" >
 </div>
 

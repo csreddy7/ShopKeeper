@@ -62,7 +62,7 @@ login.controller("loginController",function loginController($scope,$location,Sec
 			setTimeout(function(){
 				$('.status').fadeOut(1000);
 			},100);
-			$location.path('main');
+			$location.path('home');
 			$rootScope.pageToConsider="main";
 
 		}else{
