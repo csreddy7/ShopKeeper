@@ -1,0 +1,59 @@
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.product-container {
+    height: 200px;
+    width: 400px;
+    background-color: #ddd;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    height: 80px;
+    width: 170px;
+    border-radius: 2px;
+    margin: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.product-kurukure-1 {
+    background-image: url(../resources/images/kurukure-1.jpg)
+}
+
+.product-kurukure-2 {
+    background-image: url(../resources/images/kurukure-2.jpg)
+}
+
+.product-kurukure-3 {
+    background-image: url(../resources/images/kurukure-3.jpg)
+}
+
+.product-kurukure-4 {
+    background-image: url(../resources/images/kurukure-4.jpg)
+}
+
+.product-chocolate-1 {
+    background-image: url(../resources/images/chocolate-1.jpeg)
+}
+
+.product-chocolate-2 {
+    background-image: url(../resources/images/chocolate-2.jpg)
+}
+
+.product-chocolate-3 {
+    background-image: url(../resources/images/chocolate-3.png)
+}
+
+.product-chocolate-4 {
+    background-image: url(../resources/images/chocolate-4.jpg)
+}
