@@ -1,0 +1,24 @@
+.vendors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vendor {
+    height: 200px;
+    width: 300px;
+    background-color: #ddd;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    margin: 10px;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+    color: #607D8B;
+    display: flex;
+}
+
+.vendor-name {
+    margin: auto;
+}

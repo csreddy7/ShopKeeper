@@ -1,0 +1,24 @@
+.reports {
+    margin-top: 15px;
+    background-color: #ddd;
+    height: 95%;
+    border-radius: 2px;
+    color: #607D8B;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 5%;
+    color: #607D8B;
+}
+
+.reports hr {
+    border-top: 1px solid #607D8B;
+}
+
+.reports .download {
+    text-align: center;
+    margin: 20px;
+}

@@ -3,12 +3,11 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow: auto;
 }
 
 .product-container {
     height: 200px;
-    width: 400px;
+    width: 300px;
     background-color: #ddd;
     border: 1px solid #eee;
     border-radius: 2px;
@@ -33,7 +32,7 @@
 
 .product {
     height: 80px;
-    width: 170px;
+    width: 120px;
     border-radius: 2px;
     margin: 10px;
     background-size: 100% 100%;

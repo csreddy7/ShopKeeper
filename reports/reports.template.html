@@ -1,3 +1,20 @@
-<div class="col-md-12">
-    reports
+<div class="col-md-12 reports" ng-controller="reportsController">
+    <div class="heading">Reports</div>
+    <hr>
+    <div class="col-md-12">
+        <div class="col-md-4">
+            From:<input type="date" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            To:<input type="date" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            Report Type: <select class="form-control">
+                                <option ng-repeat="val in reports" value="val">{{val}}</option>
+                         </select>
+        </div>
+    </div>
+    <div class="col-md-12 download">
+        <input type="button" class="btn btn-primary" value="Download"></input>
+    </div>
 </div>

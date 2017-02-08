@@ -1,0 +1,57 @@
+.orders {
+    margin-top: 15px;
+    background-color: #ddd;
+    height: 95%;
+    border-radius: 2px;
+    color: #607D8B;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 5%;
+    color: #607D8B;
+}
+
+.orders hr {
+    border-top: 1px solid #607D8B;
+}
+
+.create-order {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.create-button {
+    display: flex;
+}
+
+.create-order-button {
+    margin: auto;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.input,
+.output {
+    display: flex;
+    margin: auto;
+    background-color: #607D8B;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 300px;
+    color: #ddd;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.order {
+    margin: auto;
+}

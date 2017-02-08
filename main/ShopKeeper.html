@@ -1,67 +1,72 @@
 <!DOCTYPE html>
-<html  lang="en" ng-app="ShopKeeper" >
-<head>	
-	<title>Shop Keeper</title>
-	<meta charset="utf-8"></meta>
-	<base href="/" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="main\ShopKeeper.css" type="text/css" rel="stylesheet"></link>
-	<link href="home\home.style.css" type="text/css" rel="stylesheet"></link>
-	<link href="commodities\commodities.style.css" type="text/css" rel="stylesheet"></link>
-	<link href="resources\font-awesome\css\font-awesome.css" type="text/css" rel="stylesheet"></link>
-	<link href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css" rel="stylesheet"></link>
-	<link href="node_modules\jasmine-core\lib\jasmine-core\jasmine.css" type="text/css" rel="stylesheet"></link>
+<html lang="en" ng-app="ShopKeeper">
+
+<head>
+    <title>Shop Keeper</title>
+    <meta charset="utf-8"></meta>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main\ShopKeeper.css" type="text/css" rel="stylesheet"></link>
+    <link href="home\home.style.css" type="text/css" rel="stylesheet"></link>
+    <link href="profile\profile.style.css" type="text/css" rel="stylesheet"></link>
+    <link href="orders\orders.style.css" type="text/css" rel="stylesheet"></link>
+    <link href="vendors\vendors.style.css" type="text/css" rel="stylesheet"></link>
+    <link href="commodities\commodities.style.css" type="text/css" rel="stylesheet"></link>
+    <link href="reports\reports.style.css" type="text/css" rel="stylesheet"></link>
+    <link href="resources\font-awesome\css\font-awesome.css" type="text/css" rel="stylesheet"></link>
+    <link href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css" rel="stylesheet"></link>
+    <link href="node_modules\jasmine-core\lib\jasmine-core\jasmine.css" type="text/css" rel="stylesheet"></link>
 
 
 </head>
-<body class="ShopKeeper"  ng-controller="shopkeeperController">
-	<div class="header">
-		<div class="logo"><span>S</span><span>K</span></div>
-		<div class="registration-link">
-		<div ng-show="pageToConsider"><a ui-sref="register">Sign-up</a> (or) </div>
-		<div ng-show="pageToConsider"><a ui-sref="login">Sign-in</a> </div>
-		</div>
-	</div> 
-	<div class="main-content">
-	<div  class="container-fluid" >
-		<div  ui-view class="row row-content"></div>
-	 </div>
-	</div>
-			
-	<div class="footer">
-		CSRK Solutions pvt.ltd &#169 2016
-	</div>
-	
-	<script src="node_modules\jquery\dist\jquery.js"></script>	
-	<script src="node_modules\angular\angular.js"></script>
-	<script src="node_modules\angular-route\angular-route.js"></script>
-	<script src="node_modules\angular-sanitize\angular-sanitize.js"></script>
-	<script src="node_modules\angular-ui-router\release\angular-ui-router.js"></script>
-	<script src="login\login.module.js"></script>
-	<script src="home\home.module.js"></script>
-	<script src="main\ShopKeeper.module.js"></script>
-	<script src="main\ShopKeeper.config.js"></script>
-	<script src="node_modules\jqueryui\jquery-ui.js"></script>
-	<script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
-<!--	<script src="node_modules\jasmine-core\lib\jasmine-core\jasmine.js"></script>
+
+<body class="ShopKeeper" ng-controller="shopkeeperController">
+    <div class="header">
+        <div class="logo"><span>S</span><span>K</span></div>
+        <div class="registration-link">
+            <div ng-show="pageToConsider"><a ui-sref="register">Sign-up</a> (or) </div>
+            <div ng-show="pageToConsider"><a ui-sref="login">Sign-in</a> </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="container-fluid">
+            <div ui-view class="row row-content"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        CSRK Solutions pvt.ltd &#169 2016
+    </div>
+
+    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <script src="node_modules\angular\angular.js"></script>
+    <script src="node_modules\angular-route\angular-route.js"></script>
+    <script src="node_modules\angular-sanitize\angular-sanitize.js"></script>
+    <script src="node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+    <script src="login\login.module.js"></script>
+    <script src="home\home.module.js"></script>
+    <script src="reports\reports.module.js"></script>
+    <script src="main\ShopKeeper.module.js"></script>
+    <script src="main\ShopKeeper.config.js"></script>
+    <script src="node_modules\jqueryui\jquery-ui.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <!--	<script src="node_modules\jasmine-core\lib\jasmine-core\jasmine.js"></script>
 	<script src="node_modules\jasmine-core\lib\jasmine-core\jasmine-html.js"></script>
 	<script src="node_modules\jasmine-core\lib\jasmine-core\boot.js"></script> -->
-		<script>
-		$('document').ready(function(){
-			setTimeout(function(){
-				$('<sub>hop</sub>').appendTo('.logo span:first-child');
-				$('<sub>eeper</sub>').appendTo('.logo span:last-child');
-			},2000);
-			
-		});
-//var myworker=new Worker("/resources/myworker.js");
-//myworker.onmessage=function(event){
-//console.log("count after loop is"+event.data);
-//}
+    <script>
+        $('document').ready(function() {
+            setTimeout(function() {
+                $('<sub>hop</sub>').appendTo('.logo span:first-child');
+                $('<sub>eeper</sub>').appendTo('.logo span:last-child');
+            }, 2000);
 
-
-
-	</script>
+        });
+        //var myworker=new Worker("/resources/myworker.js");
+        //myworker.onmessage=function(event){
+        //console.log("count after loop is"+event.data);
+        //}
+    </script>
 
 </body>
+
 </html>

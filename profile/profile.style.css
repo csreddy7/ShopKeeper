@@ -1,0 +1,39 @@
+.myaccount {
+    margin-top: 15px;
+    background-color: #ddd;
+    height: 95%;
+    border-radius: 2px;
+    color: #607D8B;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 5%;
+    color: #607D8B;
+}
+
+.myaccount hr {
+    border-top: 1px solid #607D8B;
+}
+
+.account-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.address-item {
+    text-align: left;
+    padding: 10px;
+    height: 10%;
+    font-size: 2rem;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #607D8B;
+    margin-top: 10px;
+}
