@@ -38,6 +38,10 @@
     color: #607D8B;
 }
 
+.store-summary {
+    height: 85%;
+}
+
 .heading {
     text-align: center;
     width: 100%;
@@ -48,4 +52,13 @@
 
 .dashboard hr {
     border-top: 1px solid #607D8B;
+}
+
+.line {
+    stroke: #607D8B;
+    stroke-width: 3;
+}
+
+.rotate90 {
+    transform: rotate(90 40 calc(50%));
 }
