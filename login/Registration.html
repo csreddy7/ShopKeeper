@@ -1,99 +1,90 @@
+<section id="shop-registration" ng-controller="loginController">
+    <form class="form-horizontal" name="registrationForm">
+        <div class="form-group">
+            <label class="control-label col-md-2">First Name</label>
+            <div class="col-md-4">
+                <input type="text" value="" class="form-control" autofocus required name="firstname" placeholder="first name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Last Name</label>
+            <div class="col-md-4">
+                <input type="text" value="" class="form-control" name="lastname" placeholder="Last name" />
+            </div>
+        </div>
 
-<section id="shop-registration" ng-controller="loginController" >
-	<form class="form-horizontal"  name="registrationForm">
-		<div class="form-group">
-			<label class="control-label col-md-2">First Name</label>
-			<div class="col-md-4">
-				<input type="text" value="" class="form-control" autofocus required name="firstname"
-					placeholder="first name" />
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">Last Name</label>
-			<div class="col-md-4">
-				<input type="text" value="" class="form-control" name="lastname"
-					placeholder="Last name" />
-			</div>
-		</div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Gender</label>
+            <div class="col-md-4">
+                <label class="radio-inline"><input type="radio" value="male" name="gender" />Male</label>
+                <label class="radio-inline"><input type="radio" value="female" name="gender" />Female</label>
+            </div>
+        </div>
 
-		<div class="form-group">
-			<label class="control-label col-md-2">Gender</label>
-			 <div class="col-md-4">
-			 	<label class="radio-inline"><input type="radio" value="male" name="gender" />Male</label>
-				<label class="radio-inline"><input type="radio" value="female" name="gender" />Female</label>
-			 </div>
-		</div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Store Type</label>
+            <div class="col-md-4">
+                <label class="checkbox-inline"><input type="checkbox" name="shopBig" value="big" />Big</label>
+                <label class="checkbox-inline"><input type="checkbox" name="shopSmall" value="small" />Small</label>
+            </div>
+        </div>
 
-		<div class="form-group">
-			<label class="control-label col-md-2">Store Type</label>
-			 <div class="col-md-4">
-			 	<label class="checkbox-inline"><input type="checkbox" name="shopBig" value="big" />Big</label>
-				<label class="checkbox-inline"><input type="checkbox" name="shopSmall" value="small" />Small</label>
-			 </div>
-		</div>
-
-		<div class="form-group">
-			<label class="control-label col-md-2">D.O.B</label>
-			<div class="col-md-4">
-				<input name="dob" class="form-control" type="date" />
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">Email</label>
-			<div class="col-md-4">
-				<input name="email" class="form-control" type="email"
-					placeholder="@email" />
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">Phone no</label>
-			<div class="col-md-4">
-				<input name="phoneno" class="form-control" type="tel"
-					placeholder="phone no" />
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">Shop Address</label>
-			<div class="col-md-4">
-				<textarea name="shopaddress" class="form-control"
-					placeholder="shop address"  rows="3"></textarea>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">State</label>
-			<div class="col-md-4">
-				<select name="state" class="form-control">
+        <div class="form-group">
+            <label class="control-label col-md-2">D.O.B</label>
+            <div class="col-md-4">
+                <input name="dob" class="form-control" type="date" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Email</label>
+            <div class="col-md-4">
+                <input name="email" class="form-control" type="email" placeholder="@email" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Phone no</label>
+            <div class="col-md-4">
+                <input name="phoneno" class="form-control" type="tel" placeholder="phone no" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Shop Address</label>
+            <div class="col-md-4">
+                <textarea name="shopaddress" class="form-control" placeholder="shop address" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">State</label>
+            <div class="col-md-4">
+                <select name="state" class="form-control">
 					<option value="ap">AP</option>
 					<option value="ka">KA</option></select>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">User Name</label>
-			<div class="col-md-4">
-				<input type="text" class="form-control" value="" name="username"
-					placeholder="user name" />
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">Pass Word</label>
-			<div class="col-md-4">
-				<input type="password" class="form-control" value="" name="password"
-					placeholder="pass word" />
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-md-2">Retype Pass Word</label>
-			<div class="col-md-4">
-				<input type="password" class="form-control" name="reEnterPassword" value=""
-					placeholder="pass word" />
-			</div>
-		</div>
-		<div class="form-group col-md-12">
-			<div class="col-md-offset-3">
-					<input type="submit" ng-click="submit()" class="btn btn-primary btn-md"  value="Sign Up" />
-		    </div>
-		</div>
-	</form>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">User Name</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" value="" name="username" placeholder="user name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Pass Word</label>
+            <div class="col-md-4">
+                <input type="password" class="form-control" value="" name="password" placeholder="Password" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Retype Pass Word</label>
+            <div class="col-md-4">
+                <input type="password" class="form-control" name="reEnterPassword" value="" placeholder="Retype password" />
+            </div>
+        </div>
+        <div class="form-group col-md-12">
+            <div class="col-md-offset-3">
+                <input type="submit" ng-click="submit()" class="btn btn-primary btn-md" value="Sign Up" />
+            </div>
+        </div>
+    </form>
 
 
 
