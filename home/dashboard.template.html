@@ -1,8 +1,8 @@
-<div class="col-md-12 dashboard" ng-controller="homeController">
+<div class="col-md-12 dashboard" ng-controller="homeController" ng-init="renderDashBoard();">
     <div class="heading">Dashboard</div>
     <hr>
     <div class="col-md-12 store-summary">
-        <svg width="100%" height="100%" viewBox="0 0 800 400">
+        <svg width="100%" height="100%" id="dashboard-svg" viewBox="0 0 800 400">
             <text x="0" y="175" transform="rotate(270 0 175)" >No of orders</text>
             <text x="10" y="350" >0</text>
             <text x="10" y="315" >10</text>
@@ -48,8 +48,6 @@
              <text x="725" y="370">28</text>
              <text x="750" y="370">29</text>
              <text x="775" y="370">30</text>
-             <rect x="45" y="350" width="70" height="20" fill="blue" transform="rotate(270 45 350)" />
-             <rect x="70" y="350" width="140" height="20" fill="blue" transform="rotate(270 70 350)" />
         </svg>
     </div>
 </div>
