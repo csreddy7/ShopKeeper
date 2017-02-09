@@ -5,7 +5,7 @@ ShopKeeper.controller("shopkeeperController", function shopkeeperController($roo
 
 ShopKeeper.run(function($rootScope, $location) {
     $rootScope.$on("$stateChangeStart", function(event) {
-        if ($location.path() === "/main" || $location.path() === "/login" || $location.path() === "/register") {
+        if ($location.path() === "/ShopKeeper" || $location.path() === "/login" || $location.path() === "/register") {
             $rootScope.pageToConsider = true;
         } else {
             $rootScope.pageToConsider = false;
