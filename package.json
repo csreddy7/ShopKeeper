@@ -10,6 +10,7 @@
     "angular-route": "1.5.x",
     "angular-sanitize": "1.x.x",
     "angular-ui-router": "^0.4.0",
+    "babel-cli": "^6.23.0",
     "bootstrap": "3.3.x",
     "bower": "^1.7.7",
     "express": "4.x.x",
@@ -21,6 +22,7 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-spec-reporter": "0.0.26",
+    "node-sass": "4.x.x",
     "protractor": "^3.2.2",
     "requirejs": "2.x.x"
   },
@@ -33,6 +35,7 @@
     "url": "https://github.com/csreddy7/ShopKeeper.git"
   },
   "scripts": {
-    "start": "http-server ./ -d false -a localhost -p 7697"
+    "start": "http-server ./ -d false -a localhost -p 7697",
+    "sass-start": "node-sass -w resources/ShopKeeper.scss -o resources/ShopKeeper.css"
   }
 }

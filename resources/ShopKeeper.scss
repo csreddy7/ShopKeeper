@@ -1,0 +1,28 @@
+$backgroundColor:#607D8B;
+$borderStyle:1px solid #ddd;
+@mixin placeHolderStyle {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+}
+
+div {
+    background-color: $backgroundColor;
+    border: $borderStyle;
+}
+
+input {
+    @include placeHolderStyle {
+        font-size: 2rem;
+        color: red;
+    }
+}

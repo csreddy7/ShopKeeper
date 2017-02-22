@@ -1,0 +1,24 @@
+div {
+    background-color: #607D8B;
+    border: 1px solid #ddd;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 2rem;
+    color: red;
+}
+
+input:-moz-placeholder {
+    font-size: 2rem;
+    color: red;
+}
+
+input::-moz-placeholder {
+    font-size: 2rem;
+    color: red;
+}
+
+input:-ms-input-placeholder {
+    font-size: 2rem;
+    color: red;
+}
